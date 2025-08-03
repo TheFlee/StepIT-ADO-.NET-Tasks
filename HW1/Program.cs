@@ -13,7 +13,7 @@ List<Users> users = usersDB.GetUsers();
 while (true)
 {
     Console.Clear();
-    Console.WriteLine("=== User Panel ===:");
+    Console.WriteLine("=== User Panel ===");
     Console.WriteLine("1. Sign In (Log In)");
     Console.WriteLine("2. Sign Up (Register)");
     Console.WriteLine("3. Exit");
