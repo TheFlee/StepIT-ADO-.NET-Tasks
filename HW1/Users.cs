@@ -72,12 +72,12 @@ Gender = {Gender}";
         Console.Write("Password: ");
         string pass = Console.ReadLine()!;
 
-        var newUser = users.FirstOrDefault(u => u.Username.Equals(uname, StringComparison.OrdinalIgnoreCase) && u.Password == pass);
+        var user = users.FirstOrDefault(u => u.Username.Equals(uname, StringComparison.OrdinalIgnoreCase) && u.Password == pass);
 
         Console.Clear();
-        if (newUser != null)
+        if (user != null)
         {
-            Console.WriteLine($"Welcome back, {newUser.FirstName} {newUser.LastName}!");
+            Console.WriteLine($"Welcome back, {user.FirstName} {user.LastName}!");
         }
         else
         {
